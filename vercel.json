@@ -9,7 +9,7 @@
     },
     "routes": [
         {
-            "src": "/build(.*)",
+            "src": "/build/(.*)",
             "dest": "/public/build/"
             },
         {
