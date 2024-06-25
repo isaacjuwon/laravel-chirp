@@ -10,16 +10,19 @@
     "routes": [
         {
             "src": "/build/(.*)",
-            "dest": "/public/build/"
-            },
+            "dest": "/build/$1"
+        },
         {
-        "src": "/(.*)",
-        "dest": "/api/index.php"
-    }],
+            "src": "/(.*)",
+            "dest": "/api/index.php"
+        }
+    ],
+    "outputDirectory": "public",
+
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "false",
-        "APP_URL": "https://laracel-chirp.vercel.app",
+        "APP_URL": "https://laravel-chirp.vercel.app",
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
